@@ -14,7 +14,9 @@ function showDatos(datos) {
     }
 }
 
+// Agregamos la variable resultsElement que antes no estaba definida.
 function showAlert() {
+    let resultsElement = document.getElementById("results");
     document.getElementById("alert-error").classList.add("show");
     window.setTimeout(() => document.getElementById("alert-error").classList.remove("show"), 3000)
     resultsElement = document.getElementById("results").innerHTML = "";
