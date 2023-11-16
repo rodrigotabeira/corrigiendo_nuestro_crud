@@ -14,6 +14,6 @@ userRouter.post("/", userController.createUser);
 
 userRouter.put("/:id", userController.updateUser); // se actualizo "post" por "put" para actualizar
 
-userRouter.delete("/:id", userController.getUserById);
+userRouter.delete("/:id", userController.deleteUser); //deberia ser delete para eliminar
 
 module.exports = userRouter;
