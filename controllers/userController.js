@@ -25,7 +25,7 @@ const createUser = (req, res) => {
 const updateUser = (req, res) => {
   const updatedUser = userModel.updateUser(req.params.id, req.body);
   if (updatedUser) {
-    res.status(404).json(updatedUser);
+    res.status(200).json(updatedUser); // se cambio codigo de error HTTP 404 por codigo 200 de solicitud con exito
   } else {
     res.status(404).json({ message: "Usuario no encontrado" });
   }
